@@ -1,0 +1,242 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 540px) {
+    .container {
+        width: 100%;
+    }
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-style: oblique;
+}
+
+h4 {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+h5 {
+    color: #404040;
+    font-style: oblique;
+    line-height: 2em !important;
+}
+
+.cards {
+    text-align: center;
+    margin: 75px auto;
+    background-color: white;
+    width: 75%;
+    padding: 30px 40px;
+    box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.intro {   
+    background-image: url(/images/background.png), linear-gradient(to right bottom,#fff 20%,#ec6909) !important;
+    background-position: bottom right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    border-bottom: solid 50px white;
+}
+
+.intro-row {
+    display: block; /* Needed to prevent row contents from being layed out according to flexbox model, which undoes the center alignment inheritance for some reason */
+}
+
+.profile-picture {
+    max-height: 15vh;
+    border-radius: 50%;
+}
+
+.marker-span {
+    padding: 0px 8px;
+}
+
+.marker-icon {
+    color: #ec6909;
+}
+
+.contact-span { /* Note to self: Refactor as inline list! */
+    padding: 25px 10px;
+}
+
+.contact-icon{
+    vertical-align: middle;
+    border-radius: 10%;
+    background-color: #404040;
+    color: white;
+}
+
+.contacticon,.fas {
+    padding: 10px 8px;
+}
+
+.contacticon,.fab {
+    padding: 5px;
+    font-size: 1.6em;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.skill-icon {
+    color: #ec6909;
+    font-size: 2.5em;
+}
+
+.button {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.75pt;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px 20px 10px;
+    background-color: #ec6909;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+/* button:hover::after {
+    content: "Test";
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+} */
+
+/* ::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-weight: 900;
+    padding: 0px 0px 0px 15px;
+    
+} */
+
+.carousel {
+    margin: auto auto;
+}
+
+.carousel-item {
+    height: 800px;
+}
+
+.slider-image {
+    max-width: 200px; /* Max dimensions should match testimonial image dimensions */
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.arrow-icon {
+   color: #404040;
+   font-size: 1.5rem;
+}
+
+.carousel-indicators li {
+    background-color: #a0a0a0;
+}
+
+.carousel-indicators .active {
+    background-color: #404040;
+}
+
+.carousel-caption {
+    bottom: 150px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.testimonial-name {
+    color: #404040;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cta-div, form {
+    text-align: left;
+    padding: 30px 35px 0px 35px;
+    border: solid 1px;
+    /* margin: 50px auto; */
+}
+
+.cta-icons-span {
+    font-size: 6rem;
+}
+
+.cta-icon {
+    vertical-align: bottom;
+    padding: 0px 15px 0px;
+}
+
+
+.form-row-div {
+    margin: 30px auto;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 15px;
+    border: none;
+}
+
+::placeholder {
+    color: #404040;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 250px;
+
+}
+
+.submit-button-row {
+    text-align: right;
+}
+
+.submit-button {
+    margin-right: 0px; /* Undo right margin from .button */
+}
+
+
+
+/* a[class$="carousel-control"] {
+    color: #404040;
+} */
+
+
+
